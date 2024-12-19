@@ -1,0 +1,26 @@
+server:
+  port: 8080
+jwt:
+  secret: 984hg493gh0439rthr0429uruj2309yh937gc763fe87t3f89723gf
+  lifetime: 60m
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5433/medicine
+    username: postgres
+    password: 1234
+  flyway:
+    jdbc-properties:
+      enabled: true
+      locations:
+        - db.migration
+
+springdoc:
+  swagger-ui:
+    enabled: true
+
+
